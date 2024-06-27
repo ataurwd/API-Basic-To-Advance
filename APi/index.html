@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1 id="apiId">Take a class system</h1>
+    <script>
+        function doSometing(){
+         fetch('GET https://bored-api.appbrewery.com/random')
+        .then((res) => res.json())
+        .then(data => {
+         document.getElementById('apiId')
+        });
+        }
+
+        setTimeout(() => {
+         
+        }, 10000);//10000 mili second to 10 sec.
+    </script>
+ </body>
+ </html>

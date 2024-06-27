@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="firstInput" type="number" placeholder="Input a Number">
+    <input id="secondInput" type="number" placeholder="Input a Number">
+    <button id="btn">Result</button>
+    <h3>Result= <span id="result"></span></h3>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            const firstInput = document.getElementById('firstInput').value;
+            const convertFirst = parseInt(firstInput);
+            const secondInput = document.getElementById('secondInput').value;
+            const convertSecond = parseInt(secondInput);
+            const result = convertFirst + convertSecond;
+            document.getElementById('result').innerText = result;
+        })
+    </script>
+</body>
+</html>
